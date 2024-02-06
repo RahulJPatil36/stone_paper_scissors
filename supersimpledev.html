@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="margin-top: 50px;margin-left: 50px;">
+    <p>stone paper scissors</p>
+    <button onclick="
+        let randomNumber=Math.random();
+        let computerMove='';
+        if(randomNumber>=0 && randomNumber<1/3)
+        {
+            computerMove = 'stone';
+        }
+        else if(randomNumber>=1/3 && randomNumber<2/3)
+        {
+            computerMove='paper';
+        }
+        else{
+            computerMove='scissors';
+        }
+
+        if(computerMove === 'stone'){
+            alert('tie because computer move is '+computerMove);
+        }
+        else if(computerMove === 'paper')
+        {
+            alert('you lost because computer move is '+computerMove);
+        }
+        else if(computerMove === 'scissors')
+        {
+            alert('you won because computer move is '+computerMove);
+            
+        }
+    ">stone</button> 
+
+    <button
+    onclick="
+    let randomNumber2=Math.random();
+    let computerMove2='';
+    if(randomNumber2>=0 && randomNumber2<1/3)
+    {
+        computerMove2='stone';
+    }
+    else if(randomNumber2>=1/3 && randomNumber2<2/3)
+    {
+        computerMove2='paper';
+    }
+    else{
+        computerMove2='scissors';
+    }
+
+    if(computerMove2 === 'stone'){
+        alert('you won because computer move is'+computerMove2);
+        
+        }
+    else if(computerMove2 === 'paper')
+    {
+        alert('tie because computer move is '+computerMove2);
+             
+    }
+    else if(computerMove2 === 'scissors')
+    {
+        alert('you lost because computer move is '+computerMove2);
+    }
+"
+    >paper</button>
+
+    <button
+    onclick="
+    let randomNumber3=Math.random();
+    console.log(randomNumber3);
+    let computerMove3='';
+    if(randomNumber3>=0 && randomNumber3<1/3)
+    {
+        computerMove3='stone';
+    }
+    else if(randomNumber3>=1/3 && randomNumber3<2/3)
+    {
+        computerMove3='paper';
+    }
+    else{
+        computerMove3='scissors';
+    }
+
+    if(computerMove3 === 'stone'){
+        alert('you lost because computer move is '+computerMove3);
+    }
+    else if(computerMove3 === 'paper')
+    {
+        alert('you won because computer move is '+computerMove3);
+    }
+    else if(computerMove3 === 'scissors')
+    {
+        alert('tie because computer move is '+computerMove3);
+    }
+"
+    >scissors</button>
+    
+    <script>
+        
+    </script>
+</body>
+</html>
